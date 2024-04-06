@@ -31,6 +31,7 @@ nav{
     align-items: center;
     user-select: none;
     justify-content: space-between;
+    user-select: none;
 }
 .left-main-banner,.right-main-banner{
     width: 48%;
@@ -59,12 +60,14 @@ nav{
     padding-top: calc(30vh - 85px);
     padding-bottom: calc(30vh - 85px);
     text-align: center;
+    user-select: none;
 }
 
 
 /* ---about-us---- */
 .about-us-section{
     padding-top: 80px;
+    user-select: none;
 }
 
 .about-us-section-cont{
@@ -103,6 +106,7 @@ nav{
     padding: var(--padding-inline);
     padding-top: 100px;
     text-align: center;
+    user-select: none;
 }
 .services-content{
     flex-direction: column;
@@ -136,4 +140,33 @@ nav{
 }
 .right-lservices h3,p{
     text-align: left;
+}
+
+
+
+
+/* ---why choose---- */
+.why-choose-cont{
+    padding:50px var(--padding-inline);
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+    border-bottom: 1px solid white;
+}
+.left-whychoose img{
+    width: 100%;;
+}
+.left-whychoose{
+    width: 50%;
+    padding: var(--padding-inline);
+}
+.right-whychoose{
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    padding: var(--padding-inline);
+}
+.whychoose-activity{
+    gap: 10px;
+    align-items: center;
 }
