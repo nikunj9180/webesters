@@ -177,6 +177,7 @@ nav{
 .testimonials{
     background-color: var(--main-green);
     color: #EAECF0;
+    user-select: none;
 }
 .testimonials .secondary-button{
     color: black;
@@ -240,5 +241,87 @@ nav{
 }
 .testi-card{
     border-top: 1px solid black;
-    padding: 40px var(--padding-inline);
+    padding: 45px var(--padding-inline);
+}
+
+
+/* ----footer----- */
+.footer-cont{
+    justify-content: space-between;
+    padding: 50px var(--padding-inline);
+    user-select: none;
+}
+.left-footer{
+    width: 33%;
+    padding: var(--padding-inline);
+    flex-direction: column;
+    gap: 15px;
+}
+.footer-logos{
+    padding:var(--padding-inline) 0px;
+    gap: 20px;
+}
+.mid-footer{
+    width: 33%;
+    padding: var(--padding-inline);
+    justify-content: space-between;
+}
+.right-footer{
+    width: 25%;
+    padding: var(--padding-inline);
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footerlinks{
+    flex-direction: column;
+    gap: 8px;
+}
+.footerlogos{
+    color: var(--main-green);
+}
+.footerlink{
+    transition: 0.2s all ease-in-out;
+    font-size: 1.1rem;
+
+}
+.footerlink:hover{
+    color: var(--main-green);
+}
+.sub-mid-footer{
+    flex-direction: column;
+    gap: 15px;
+}
+.footer-form{
+    flex-direction: column;
+    gap: 15px;
+}
+.footer-form input{
+    padding: var(--padding-inline);
+    border: none;
+    font-family: 'Poppins',sans-serif;
+    border-radius: 4px;
+}
+.footer-form input:focus{
+    outline: none;
+}
+
+.footer-copy{
+    justify-content: space-between;
+    padding: 30px var(--padding-inline);
+    text-transform: uppercase;
+    border-top: 0.6px solid white;
+    user-select: none;
+}
+.left-footer-copy p,.copylink{
+    font-size: 1rem;
+}
+.right-footer-copy{
+    gap: 30px;
+}
+.copylink{
+    transition: 0.2s all ease-in-out;
+}
+.copylink:hover{
+    color: var(--main-green);
 }
