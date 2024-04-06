@@ -152,6 +152,7 @@ nav{
     align-items: center;
     user-select: none;
     border-bottom: 1px solid white;
+    margin-bottom: 50px;
 }
 .left-whychoose img{
     width: 100%;;
@@ -169,4 +170,75 @@ nav{
 .whychoose-activity{
     gap: 10px;
     align-items: center;
+}
+
+
+/* ----testimonials---- */
+.testimonials{
+    background-color: var(--main-green);
+    color: #EAECF0;
+}
+.testimonials .secondary-button{
+    color: black;
+    border-color: black;
+}
+.testimonial-header{
+    width: 60%;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px var(--padding-inline);
+}
+.test-head-val{
+    gap: 40px;
+}
+.val .size{
+    font-size: 0.8rem;
+}
+.testimonial-asset img{
+    width: 100%;
+    border-radius: inherit;
+}
+.testimonial-asset{
+    width: 40%;
+    border-radius: 12px;
+    padding:50px var(--padding-inline);
+}
+
+.main-testi{
+    align-items: center;
+}
+
+.testi-profile{
+    align-items: end;
+    padding: var(--padding-inline);
+    gap: 10px;
+}
+.testi-lprofile img{
+    width: 100%;
+}
+.testi-lprofile{
+    width: 20%;
+}
+.left-testi-card{
+    width: 30%;
+    color: #EAECF0;
+}
+.right-testi-card{
+    width: 70%;
+    color: #EAECF0;
+}
+.right-testi-card p{
+    text-align: justify;
+    color: #EAECF0;
+}
+.right-testi-card h2{
+    font-size: 2rem;
+    color: #EAECF0;
+}
+.testi-rprofile h3,.testi-rprofile p{
+    color: #EAECF0;
+}
+.testi-card{
+    border-top: 1px solid black;
+    padding: 40px var(--padding-inline);
 }
