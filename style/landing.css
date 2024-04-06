@@ -57,3 +57,34 @@ nav{
     text-align: center;
 }
 
+
+/* ---about-us---- */
+.about-us-section{
+    padding-top: 80px;
+}
+
+.about-us-section-cont{
+    padding: var(--padding-inline);
+    padding-top: 80px;
+    justify-content: space-between;
+    align-items:end;
+    border-top: 1px solid white;
+}
+
+.left-land-aboutus{
+    width: 50%;
+    flex-direction: column;
+    gap: 50px;
+}
+.land-about-content{
+    flex-direction: column;
+    gap: 20px;
+}
+.right-land-aboutus{
+    width: 40%;
+    border-radius: 12px;
+}
+.right-land-aboutus img{
+    width: 100%;
+    border-radius: inherit;
+}

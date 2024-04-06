@@ -29,8 +29,7 @@ h3{
 p{
     
     font-size: 1.1rem;
-    color:black;
-    line-height: 1.8rem;
+
 }
 a{
     font-size: 1.1rem;
@@ -84,7 +83,14 @@ ul{
     align-items: center;
     text-transform: uppercase;
 }
-
+.secondary-button{
+    color: var(--main-green);
+    text-transform: uppercase;
+    padding: 5px 20px;
+    background-color: inherit;
+    border: 1px solid var(--main-green);
+    border-radius: 20px
+}
 
 
 
