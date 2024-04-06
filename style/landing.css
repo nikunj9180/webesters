@@ -1,0 +1,59 @@
+/* ----navbar---- */
+nav{
+    position: sticky;
+    top: 0%;
+    background-color: inherit;
+}
+.main-nav-cont{
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding-inline);
+    user-select: none;
+}
+.left-nav h2{
+    color: var(--yellow);
+}
+.hoverlinks{
+    align-items: center;
+    gap: 30px;
+}
+
+.navlink{
+    transition: 0.2s all ease-in-out;
+}
+.navlink:hover{
+    color: var(--main-green);
+}
+
+/* ----main-banner---- */
+.main-banner-cont{
+    height: 70vh;
+    align-items: center;
+    user-select: none;
+    justify-content: space-between;
+}
+.left-main-banner,.right-main-banner{
+    width: 48%;
+}
+.right-main-banner img{
+    width: 100%;
+}
+.left-main-banner{
+    flex-direction: column;
+    gap: 50px;
+}
+.bottom-left-main-banner{
+    justify-content: space-between;
+}
+.bottom-banner-section h3{
+    line-height: 0.8rem;
+}
+
+/* ----main-text---- */
+.main-text{
+    background-color: var(--main-green);
+    padding-top: calc(30vh - 85px);
+    padding-bottom: calc(30vh - 85px);
+    text-align: center;
+}
+
