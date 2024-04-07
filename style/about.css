@@ -36,3 +36,21 @@
     gap: 30px;
     padding:80px var(--padding-inline);
 }
+
+
+@media screen and (max-width:767px){
+    .about-pg-main-header{
+        padding: 20px var(--padding-inline);
+    }
+    .about-pg-main-content{
+        margin-bottom: 50px;
+    }
+    .about-anchor h1{
+        text-align: center;
+    }
+}
+@media screen and (max-width:479px){
+    .about-pg-main-header h1{
+        font-size: 2rem;
+    }
+}
