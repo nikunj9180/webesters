@@ -500,6 +500,9 @@ nav{
     }
 }
 @media screen and (max-width:479px) {
+    .main-banner-cont{
+        height: calc(95vh - 83px);
+    }
     .top-left-main-banner h1{
         font-size: 2.5rem;
     }
