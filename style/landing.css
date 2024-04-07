@@ -24,6 +24,14 @@ nav{
 .navlink:hover{
     color: var(--main-green);
 }
+.nav-toggle{
+    display: none;
+}
+.nav-toggle i{
+    color: var(--yellow);
+    background-color: #EAECF0;
+}
+
 
 /* ----main-banner---- */
 .main-banner-cont{
@@ -35,6 +43,7 @@ nav{
 }
 .left-main-banner,.right-main-banner{
     width: 48%;
+    padding: var(--padding-inline);
 }
 .right-main-banner img{
     width: 100%;
@@ -46,13 +55,9 @@ nav{
 .bottom-left-main-banner{
     justify-content: space-between;
     align-items: center;
+    gap: 40px;
 }
-.bottom-banner-section h2{
-    line-height: 2.5rem;
-}
-.bottom-banner-section h1{
-    line-height: 3rem;
-}
+
 
 /* ----main-text---- */
 .main-text{
@@ -93,6 +98,8 @@ nav{
 }
 .right-land-aboutus img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: inherit;
 }
 
@@ -136,7 +143,7 @@ nav{
 .services-land-card{
     padding: 40px 20px;
     width: 33%;
-    gap: 20px;
+    gap: 10px;
 }
 .right-lservices h3,p{
     text-align: left;
@@ -210,7 +217,7 @@ nav{
 }
 
 .testi-profile{
-    align-items: end;
+    align-items: start;
     padding: var(--padding-inline);
     gap: 10px;
 }
@@ -220,6 +227,8 @@ nav{
 .testi-lprofile{
     width: 20%;
 }
+
+
 .left-testi-card{
     width: 30%;
     color: #EAECF0;
@@ -250,9 +259,10 @@ nav{
     justify-content: space-between;
     padding: 50px var(--padding-inline);
     user-select: none;
+    gap: 50px;
 }
 .left-footer{
-    width: 33%;
+    width: 25%;
     padding: var(--padding-inline);
     flex-direction: column;
     gap: 15px;
@@ -262,9 +272,10 @@ nav{
     gap: 20px;
 }
 .mid-footer{
-    width: 33%;
+    width: 35%;
     padding: var(--padding-inline);
     justify-content: space-between;
+    gap: 50px;
 }
 .right-footer{
     width: 25%;
@@ -324,4 +335,166 @@ nav{
 }
 .copylink:hover{
     color: var(--main-green);
+}
+
+
+
+/* ----responsive - queries----- */
+
+@media screen and (max-width:991px) {
+    .hoverlinks{
+        gap: 15px;
+        justify-content: space-between;
+    }
+    .left-nav h2{
+        font-size: 1.8rem;
+    }
+    .about-us-section-cont{
+        align-items: center;
+    }
+    .services-land-card{
+        width: 50%;
+    }
+    .services-cards-area-land .services-land-card:nth-child(-n+4){
+        border-bottom: 1px dotted #EAECF0;
+    }
+    .services-cards-area-land .services-land-card:nth-child(4){
+        border-right: none;
+    }
+    .services-cards-area-land .services-land-card:nth-child(3){
+        border-left: none;
+        border-right: 1px dotted #EAECF0;
+    }
+    .mid-footer{
+        width: 50%;
+        gap: 40px;
+        justify-content: space-evenly;
+
+    }
+    .right-footer{
+        width: 80%;
+    }
+    .footer-cont{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .left-testi-card{
+        width: 40%;
+    }
+    .right-testi-card{
+        width: 60%;
+    }
+    
+}
+    
+@media screen and (max-width:767px) {
+    .nav-toggle{
+        display: block;
+    }
+    .left-nav{
+        position: relative;
+    }
+    .hoverlinks{
+        position: absolute;
+        flex-direction: column;
+        width: 100%;
+        left: -100%;
+        top: 63px;
+        background-color: #1c1c1c;
+        padding: var(--padding-inline);
+        transition: 0.2s all ease-in-out;
+    }
+    .hoverlinks.active{
+        left: 0%;
+    }
+    .left-nav h2{
+        font-size: 2.5rem;
+    }
+    .main-banner-cont{
+        flex-direction: column-reverse;
+        height: calc(100vh - 83px);
+        margin-bottom: 100px;
+    }
+    .left-main-banner{
+        width: 100%;
+    }
+    .right-main-banner{
+        width: 60%;
+    }
+    .main-text h1{
+        font-size: 2.5rem;
+    }
+    .about-us-section-cont{
+        flex-direction: column-reverse;
+        border: none;
+        gap: 50px;
+    }
+    .left-land-aboutus{
+        width: 100%;
+    }
+    .right-land-aboutus{
+        width: 100%;
+        height: 35vh;
+    }
+    .services-land-card{
+        width: 100%;
+        border-left:none !important;
+        border-right: none !important;
+        border-bottom: 1px dotted #EAECF0;
+        padding: 40px var(--padding-inline);
+    }
+    .why-choose-cont{
+        flex-direction: column-reverse;
+        border: none;
+    }
+    .left-whychoose{
+        width: 100%;
+        height: 30vh;
+    }
+    .left-whychoose img{
+        object-fit: cover;
+        object-position: top;
+    }
+    .right-whychoose{
+        width: 100%;
+    }
+    .main-testi{
+        flex-direction: column-reverse;
+    }
+    .testimonial-asset{
+        display: none;
+    }
+    .testimonial-header{
+        width: 100%;
+        align-items: center;
+    }
+    .testi-card{
+        flex-direction: column-reverse;
+    }
+    .right-testi-card{
+        width: 100%;
+    }
+    .left-testi-card{
+        width: 100%;
+    }
+    .testi-lprofile{
+        width: 15%;
+    }
+    .testi-profile{
+        align-items: center;
+    }
+    .left-footer,.mid-footer,.right-footer{
+        width: 100%;
+    }
+    .mid-footer{
+        justify-content: space-between;
+    }
+    .footer-copy{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width:479px) {
+    
 }
