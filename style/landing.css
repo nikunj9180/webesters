@@ -473,6 +473,7 @@ nav{
     .testimonial-header{
         width: 100%;
         align-items: center;
+        background:linear-gradient(rgba(1,1,1,0.6),rgba(1,1,1,0.6)), url(../assets/Image\ 3.png);
     }
     .testi-card{
         flex-direction: column-reverse;
