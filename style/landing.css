@@ -513,6 +513,9 @@ nav{
     .right-main-banner img{
         object-fit: contain;
     }
+    .left-main-banner{
+        gap: 20px;
+    }
     .bottom-left-main-banner h2{
         font-size: 1.5rem;
     }
