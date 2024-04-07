@@ -1,12 +1,14 @@
 .service-header{
     text-align: center;
     padding: var(--padding-inline);
+    user-select: none;
 }
 .services-pgcont{
     padding: 40px var(--padding-inline);
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid white;
+    user-select: none;
 }
 .left-bservices img{
     width: 100%;
@@ -28,6 +30,7 @@
     justify-content: space-between;
     gap: 60px;
     flex-wrap: wrap;
+    user-select: none;
 
 }
 .service-pg-card{
