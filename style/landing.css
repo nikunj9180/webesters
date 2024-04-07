@@ -474,6 +474,9 @@ nav{
         width: 100%;
         align-items: center;
         background:linear-gradient(rgba(1,1,1,0.6),rgba(1,1,1,0.6)), url(../assets/Image\ 3.png);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     .testi-card{
         flex-direction: column-reverse;
