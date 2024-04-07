@@ -103,7 +103,7 @@
     }
     .service-header h1{
         color: #1c1c1c;
-        -webkit-text-stroke: 0.3px var(--main-green);
+        -webkit-text-stroke: 0.5px var(--main-green);
     }
     .services-pgcont{
         padding-bottom: 100px;

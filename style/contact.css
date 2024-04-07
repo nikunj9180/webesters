@@ -44,3 +44,30 @@
 .contact-pg{
     margin-bottom: 100px;
 }
+
+
+@media screen and (max-width:991px){
+    .contact-pg-header p{
+        text-align: center;
+    }
+    .contact-pg-header{
+        border: none;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .main-contactus-cont{
+        height: auto;
+    }
+    .contact-pg-content{
+        flex-direction: column;
+    }
+    .cont-lcontent{
+        width: 100%;
+        padding-bottom: 150px;
+    }
+    .cont-rcontent{
+        width: 100%;
+        padding: var(--padding-inline);
+    }
+}
