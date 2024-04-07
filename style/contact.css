@@ -1,0 +1,46 @@
+.contact-pg-header h1{
+    text-transform: uppercase;
+}
+.contact-pg-header{
+    padding:50px var(--padding-inline);
+    border-bottom: 1px solid white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.contact-pg-content{
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px var(--padding-inline);
+
+}
+.cont-lcontent{
+    width: 50%;
+    padding: var(--padding-inline);
+}
+.cont-lcontent img{
+    width: 100%;
+}
+
+.cont-rcontent{
+    width: 50%;
+    flex-direction: column;
+    gap: 50px;
+    padding: var(--padding-inline);
+    padding-left: 100px;
+}
+
+.contact-subcontent h3{
+    color: var(--main-green);
+}
+.contact-subcontent{
+    flex-direction: column;
+    gap: 10px;
+}
+.main-contactus-cont{
+    height: calc(100vh - 85px);
+}
+.contact-pg{
+    margin-bottom: 100px;
+}
